@@ -49,3 +49,7 @@ HTML5, CSS3, SASS/LESS, jQuery, angular 5, bootstrap
 ## 1 - TECHNO
 git, node js, photoshop,
 jira, gitlab
+
+
+https://www.jeparsaucanada.com/les-indispensables-pour-trouver-un-travail/
+https://www.guichetemplois.gc.ca/pieces_jointes-fra.do?cid=11906&lang=fra
