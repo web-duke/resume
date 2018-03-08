@@ -27,33 +27,32 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-CV:
-1 - data
-2 - zoning
-3 - design
-4 - inté
-5 - dl page en pdf
+## TODO:
+- 1 - data
+- 2 - zoning
+- 3 - design
+- 4 - inté
+- 5 - dl page en pdf
 
 
 1 : (fr/en)
-Intro
-compétences
-techno
-xp pro
-xp etude
-liens
-info du site cv : design, dev en angular ...
+- Intro
+- compétences
+- techno
+- xp pro
+- xp etude
+- liens
+- info du site cv : design, dev en angular ...
 
-
----INTRO---
+## 1 - INTRO
 - intégrateur senior 5+
 - developpeur front junior 
 - se forme pour devenir dev front
 - projet sur longterm : intéressé par UX/UI design
 
----COMPETENCES---
+## 1 - COMPETENCES
 HTML5, CSS3, SASS/LESS, jQuery, angular 5, bootstrap
 
----TECHNO---
+## 1 - TECHNO
 git, node js, photoshop,
 jira, gitlab
