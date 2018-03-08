@@ -30,10 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1 : (fr/en)
 - Intro
-- compétences
+- compétences (cercle pourcentage (skill achievement))
 - techno
-- xp pro
-- xp etude
+- xp pro (timeline vertical)
+- xp etude (timeline vertical)
 - liens
 - info du site cv : design, dev en angular ...
 
