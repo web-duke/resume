@@ -14,7 +14,6 @@ export class SkillsItemComponent implements OnInit {
 
   ngOnInit() {
     this.barPosition = 100 - this.xp;
-    console.log(this.barPosition);
   }
 
 }
