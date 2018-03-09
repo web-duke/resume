@@ -3,17 +3,18 @@
 html,body{
     box-sizing: border-box;
     width: 100%; height: 100%;
-    font-size: 16px;    
+    font-size: 12px;    
+    background-color: $c-bodyBack;
     background-image: url("assets/img/illu-intro.jpg");
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
     font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
+    color: $c-fontPrimary;
 }
 
 section{
     box-sizing: border-box;
     padding: 1rem;
-    background-color: darkslategray;
+    background-color: $c-bodyBack;
 }
