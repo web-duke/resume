@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ResponsiveModule } from 'ng2-responsive';
 
 
 import { AppComponent } from './app.component';
@@ -14,7 +15,8 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ResponsiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
