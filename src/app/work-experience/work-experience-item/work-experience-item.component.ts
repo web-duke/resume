@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-work-experience-item',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-experience-item.component.scss']
 })
 export class WorkExperienceItemComponent implements OnInit {
+  @Input() title = ''; // job title
+  @Input() company = ''; // company name
+  @Input() dates = ''; // dates of work
 
   constructor() { }
 

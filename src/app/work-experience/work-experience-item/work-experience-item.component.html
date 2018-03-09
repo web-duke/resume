@@ -1,3 +1,15 @@
-<p>
-  work-experience-item works!
-</p>
+<article class="work-experience-item">
+  <header>
+    <h2>{{ title }}</h2>
+
+    <p>{{ company }}</p>
+  </header>
+
+  <aside>{{ dates }}</aside>
+
+  <p>
+    <ng-content></ng-content>
+  </p>
+</article>
+
+<!-- @todo: img entreprises -->
