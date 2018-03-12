@@ -22,15 +22,11 @@
         "../node_modules/normalize.css/normalize.css",
         "scss/styles.scss"
       ],
-
-
       "stylePreprocessorOptions": {
         "includePaths": [
           "scss"
         ]
       },
-
-
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
