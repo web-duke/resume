@@ -52,6 +52,7 @@ jira, gitlab
 
 
 https://www.npmjs.com/package/ng2-responsive
+https://www.npmjs.com/package/ng2-animate-on-scroll
 https://stackblitz.com/github/web-duke/resume
 https://www.jeparsaucanada.com/les-indispensables-pour-trouver-un-travail/
 https://www.guichetemplois.gc.ca/pieces_jointes-fra.do?cid=11906&lang=fra

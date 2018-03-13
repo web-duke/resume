@@ -10,6 +10,7 @@ import { SkillsItemComponent } from './skills/skills-item/skills-item.component'
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { WorkExperienceItemComponent } from './work-experience/work-experience-item/work-experience-item.component';
 import { TechnicalEnvironmentComponent } from './technical-environment/technical-environment.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { TechnicalEnvironmentComponent } from './technical-environment/technical
     SkillsItemComponent,
     WorkExperienceComponent,
     WorkExperienceItemComponent,
-    TechnicalEnvironmentComponent
+    TechnicalEnvironmentComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
