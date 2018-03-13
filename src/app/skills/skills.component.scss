@@ -23,28 +23,40 @@
 }
 
 .skills__total__item{
+    $skill1 : 0.9;
+    $skill2 : 0.99;
+    $skill3 : 0.9;
+    $skill4 : 0.8;
+    $skill5 : 0.7;
+    $skill6 : 0.3;
+    $divider: ($skill1 + $skill2 + $skill3 + $skill4 + $skill5 + $skill6);
+
     flex-shrink: 0;
     flex-grow: 0;
     height: 2rem;
 
     &:nth-of-type(1){
-        width: calc(98% / 3.73);
-        background-color: red;  
+        width: calc(#{percentage($skill1)}  / #{$divider});
+        background-color: blue;  
     }
     &:nth-of-type(2){
-        width: calc(90% / 3.73);
-        background-color: pink;
+        width: calc(#{percentage($skill2)} / #{$divider});
+        background-color: red;
     }
     &:nth-of-type(3){
-        width: calc(85% / 3.73);
-        background-color: blue;
+        width: calc(#{percentage($skill3)} / #{$divider});
+        background-color: pink;
     }
     &:nth-of-type(4){
-        width: calc(70% / 3.73);
-        background-color: yellow;
+        width: calc(#{percentage($skill4)}/ #{$divider});
+        background-color: darkblue;
     }
     &:nth-of-type(5){
-        width: calc(30% / 3.73);
+        width: calc(#{percentage($skill5)} / #{$divider});
+        background-color: green;
+    }
+    &:nth-of-type(6){
+        width: calc(#{percentage($skill6)} / #{$divider});
         background-color: orange;
     }
 }
