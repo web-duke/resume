@@ -1,5 +1,23 @@
 @import "variables";
 
+.skills__skills-item-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__skills-item-wrapper__block{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @media ($sz-sm) {
+        flex-basis: calc(100% / 2);
+    }
+    @media ($sz-xl) {
+        flex-basis: calc(100% / 3);
+    }
+}
+
 .skills__total{
     display: flex;
 }

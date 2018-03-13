@@ -8,12 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SkillsItemComponent implements OnInit {
   @Input() label = ''; // skill label
   @Input() xp = 0; // skill percentage
-  @Input() barPosition = 0; // skill percentage
 
   constructor() { }
 
   ngOnInit() {
-    this.barPosition = 100 - this.xp;
   }
 
 }

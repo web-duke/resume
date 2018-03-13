@@ -1,14 +1,16 @@
 <section class="skills">
   <h1>Skills achievement</h1>
 
-  <app-skills-item [label]="'HTML5 / CSS3'" [xp]="98"></app-skills-item>
-  <app-skills-item [label]="'SASS'" [xp]="90"></app-skills-item>
-  <app-skills-item [label]="'JQUERY'" [xp]="85"></app-skills-item>
-  <app-skills-item [label]="'JS'" [xp]="70"></app-skills-item>
-  <app-skills-item [label]="'ANGULAR 5'" [xp]="30"></app-skills-item>
+  <div class="skills__skills-item-wrapper">
+    <div class="skills__skills-item-wrapper__block"><app-skills-item [label]="'HTML5 / CSS3'" [xp]="98"></app-skills-item></div>
+    <div class="skills__skills-item-wrapper__block"><app-skills-item [label]="'SASS'" [xp]="90"></app-skills-item></div>
+    <div class="skills__skills-item-wrapper__block"><app-skills-item [label]="'JQUERY'" [xp]="85"></app-skills-item></div>
+    <div class="skills__skills-item-wrapper__block"><app-skills-item [label]="'JS'" [xp]="70"></app-skills-item></div>
+    <div class="skills__skills-item-wrapper__block"><app-skills-item [label]="'ANGULAR 5'" [xp]="30"></app-skills-item></div>
+  </div>
 
   <h2>Skills distribution</h2>
-  
+
   <div class="skills__total">
     <div class="skills__total__item"></div>
     <div class="skills__total__item"></div>

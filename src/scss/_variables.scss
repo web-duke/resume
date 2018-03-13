@@ -3,6 +3,7 @@
 $cl-white         : #ffffff;
 $cl-black         : #000000;
 $cl-blackLight    : #333333;
+$cl-blackLightO   : rgba(51, 51, 51, 0.96);
 $cl-grey          : #666666;
 $cl-blueLight     : #8ea7d6;
 
@@ -12,7 +13,7 @@ $c-fontPrimary    : $cl-white;
 $c-border         : $cl-grey;
 
 $c-bodyFront      : $cl-blueLight;
-$c-bodyBack       : $cl-blackLight;
+$c-bodyBack       : $cl-blackLightO;
 // --- COLORS //
 
 // SCREEN SIZES --- //
