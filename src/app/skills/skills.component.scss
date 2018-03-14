@@ -23,40 +23,29 @@
 }
 
 .skills__total__item{
-    $skill1 : 0.9;
-    $skill2 : 0.99;
-    $skill3 : 0.9;
-    $skill4 : 0.8;
-    $skill5 : 0.7;
-    $skill6 : 0.3;
-    $divider: ($skill1 + $skill2 + $skill3 + $skill4 + $skill5 + $skill6);
+    $skills: (
+        1: (1: 0.9, 2: blue), 
+        2: (1: 0.99, 2: red), 
+        3: (1: 0.9, 2: pink), 
+        4: (1: 0.8, 2: darkblue), 
+        5: (1: 0.7, 2: green), 
+        6: (1: 0.3, 2: orange)
+    );
+
+    $divider: 0;
+
+    @each $key, $val in $skills {
+        $divider: $divider + map-get($val, 1);
+    }
+
+    @each $key, $val in $skills {
+        &:nth-of-type(#{$key}){
+            width: calc(#{percentage(map-get($val, 1))}  / #{$divider});
+            background-color: map-get($val, 2);  
+        }
+    }
 
     flex-shrink: 0;
     flex-grow: 0;
     height: 2rem;
-
-    &:nth-of-type(1){
-        width: calc(#{percentage($skill1)}  / #{$divider});
-        background-color: blue;  
-    }
-    &:nth-of-type(2){
-        width: calc(#{percentage($skill2)} / #{$divider});
-        background-color: red;
-    }
-    &:nth-of-type(3){
-        width: calc(#{percentage($skill3)} / #{$divider});
-        background-color: pink;
-    }
-    &:nth-of-type(4){
-        width: calc(#{percentage($skill4)}/ #{$divider});
-        background-color: darkblue;
-    }
-    &:nth-of-type(5){
-        width: calc(#{percentage($skill5)} / #{$divider});
-        background-color: green;
-    }
-    &:nth-of-type(6){
-        width: calc(#{percentage($skill6)} / #{$divider});
-        background-color: orange;
-    }
 }
