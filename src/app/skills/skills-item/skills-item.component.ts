@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SkillsItemComponent implements OnInit {
   @Input() label = ''; // skill label
   @Input() xp = 0; // skill percentage
+  @Input() color = ''; // skill color
 
   constructor() { }
 
