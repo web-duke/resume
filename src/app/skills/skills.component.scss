@@ -33,7 +33,7 @@
         6: (1: 0.30, 2: #dd0031)
     );
 
-    $divider: 0;
+    $divider: 0;    
 
     @each $key, $val in $skills {
         $divider: $divider + map-get($val, 1);
@@ -48,5 +48,18 @@
 
     flex-shrink: 0;
     flex-grow: 0;
-    height: 2rem;
+}
+
+.skills__total__item__img{
+    display: block;
+    width: 100%; max-width: 2rem;
+    height: auto;
+    margin: 0.5rem auto;
+
+    @media ($sz-xs) {
+        max-width: 3rem;
+    }
+    @media ($sz-sm) {
+        max-width: 4rem;
+    }
 }

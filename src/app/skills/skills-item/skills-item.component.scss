@@ -1,5 +1,31 @@
 @import "variables";
 
+.skills-item{
+    display: flex;
+    align-items: center;
+}
+
+.skills-item__img{
+    display: block;
+    width: 100%; max-width: 8rem;
+    height: auto;
+
+    @media ($sz-sm){
+        max-width: 10rem;
+    }
+}
+
+.skills-item__img--wrapper{
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.skills-item__desc{
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
+
 .skills-item__achievement{
     overflow: hidden;
     position: relative;
