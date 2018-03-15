@@ -1,0 +1,16 @@
+@import "variables";
+
+.work-experience-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-experience-wrapper__block{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @media ($sz-sm) {
+        flex-basis: calc(100% / 2);
+    }
+}
