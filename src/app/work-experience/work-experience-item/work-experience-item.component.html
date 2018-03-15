@@ -2,7 +2,10 @@
   <header>
     <h2>{{ title }}</h2>
 
-    <p>{{ company }}</p>
+    <a href="{{ srcUrl }}" target="_blank">
+      <img src="{{ imgPath }}" alt="{{ company }}">
+      {{ company }}
+    </a>
   </header>
 
   <aside>{{ dates }}</aside>
