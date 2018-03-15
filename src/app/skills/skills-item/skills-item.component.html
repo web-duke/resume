@@ -1,14 +1,16 @@
 <article class="skills-item">
-  <div class="skills-item__img--wrapper">
-    <img class="skills-item__img" src="{{ imgPath }}" alt="{{ label }}">
-  </div>
-
-  <div class="skills-item__desc">
-    <h2 class="skills-item__title">{{ label }}</h2>
-
-    <div class="skills-item__achievement">
-      <div class="skills-item__achievement__bar" [ngStyle]="{'width.%': xp,'background-color': color }"></div>
-      <span class="skills-item__achievement__val">{{ xp }}%</span>
+  <a class="skills-item__link" href="{{ srcUrl }}" target="_blank">
+    <div class="skills-item__img--wrapper">
+      <img class="skills-item__img" src="{{ imgPath }}" alt="{{ label }}">
     </div>
-  </div>
+
+    <div class="skills-item__desc">
+      <h2 class="skills-item__title">{{ label }}</h2>
+
+      <div class="skills-item__achievement">
+        <div class="skills-item__achievement__bar" [ngStyle]="{'width.%': xp,'background-color': color }"></div>
+        <span class="skills-item__achievement__val">{{ xp }}%</span>
+      </div>
+    </div>
+  </a>
 </article>
