@@ -34,6 +34,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - techno
 - xp pro (timeline vertical)
 - xp etude (timeline vertical)
+- langues
+- activités
 - liens
 - info du site cv : design, dev en angular ...
 
