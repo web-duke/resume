@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SkillsItemComponent implements OnInit {
   @Input() label = ''; // skill label
-  @Input() xp = 0; // skill percentage
+  @Input() xp = 1; // skill min 1 max 4
   @Input() color = ''; // skill color
   @Input() imgName = ''; // skill image name
   @Input() imgPath = 'assets/img/'; // image path

@@ -26,13 +26,20 @@ body{
     }
 }
 
-section{
+.section-wrapper{
     box-sizing: border-box;
     padding: 1rem;
     background-color: $c-bodyBack;
+}
+
+section{
+    margin: 0 auto;
     font-size: 1.2rem;
 
-    @media ($sz-sm) {
+    @media ($sz-xs) {
         font-size: 1.6rem;
+    }
+    @media ($sz-xl) {
+        max-width: 140rem;
     }
 }
