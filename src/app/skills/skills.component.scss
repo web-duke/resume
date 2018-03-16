@@ -18,19 +18,38 @@
     }
 }
 
+.skills__total-wrapper{
+    &:hover{
+        .skills__total{
+            transform: scale(1, 1);
+        }
+        
+        .skills__total__item__img{
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.skills__total--title{
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .skills__total{
     display: flex;
+    transition: transform $transQuick ease;
+    transform: scale(1, 0.1);
 }
 
 .skills__total__item{
     // skills : 1 = xp from skills.component.html
     $skills: (
-        1: (1: 0.90, 2: #e44d26), 
-        2: (1: 0.99, 2: #006fb6), 
-        3: (1: 0.90, 2: #cd689a), 
-        4: (1: 0.80, 2: #193556), 
-        5: (1: 0.60, 2: #e9ca32), 
-        6: (1: 0.30, 2: #dd0031)
+        1: (1: 1, 2: #e44d26), 
+        2: (1: 1, 2: #006fb6), 
+        3: (1: 1, 2: #cd689a), 
+        4: (1: 0.75, 2: #193556), 
+        5: (1: 0.50, 2: #e9ca32), 
+        6: (1: 0.25, 2: #dd0031)
     );
 
     $divider: 0;    
@@ -55,6 +74,8 @@
     width: 100%; max-width: 2rem;
     height: auto;
     margin: 0.5rem auto;
+    transition: transform $transSlow ease;
+    transform: scale(0, 0);
 
     @media ($sz-xs) {
         max-width: 3rem;

@@ -30,6 +30,10 @@ body{
     box-sizing: border-box;
     padding: 1rem;
     background-color: $c-bodyBack;
+
+    &:nth-child(odd){
+        background-color: $c-bodyMiddle;
+    }
 }
 
 section{
@@ -42,4 +46,8 @@ section{
     @media ($sz-xl) {
         max-width: 140rem;
     }
+}
+
+h1{
+    text-align: center;
 }

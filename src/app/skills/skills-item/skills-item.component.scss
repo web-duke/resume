@@ -3,6 +3,12 @@
 .skills-item__link{
     display: block;
     text-align: center;
+
+    &:hover{
+        .skills-item__achievement__img{
+            transform: scale(2)
+        }
+    }
 }
 
 // QUARTERS
@@ -27,6 +33,7 @@ $quarterBackColor   : $c-bodyMiddle;
     display: block;
     width: 40%; height: auto;
     margin: 0 auto;
+    transition: transform $transQuick ease;
 }
 
 @include classPrefix("skills-item__achievement__q"){

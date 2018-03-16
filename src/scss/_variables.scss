@@ -1,44 +1,55 @@
 // COLORS --- //
 // color list
-$cl-black         : #000000;
-$cl-blackLight    : #2e2f34;
-$cl-white         : #ffffff;
-$cl-grey          : #5c5d62;
-$cl-greyLight     : #88898e;
-$cl-blueNavy      : #303d4e;
-$cl-blueNavyLight : #4e6a91;
-$cl-blueLight     : #8ea7d6;
+$cl-black           : #000000;
+$cl-blackLight      : #2e2f34;
+$cl-white           : #ffffff;
+$cl-grey            : #5c5d62;
+$cl-greyLight       : #88898e;
+$cl-blueNavy        : #303d4e;
+$cl-blueNavyLight   : #4e6a91;
+$cl-blueLight       : #8ea7d6;
 
 // color assignment
-$c-fontPrimary    : $cl-white;
+$c-fontPrimary      : $cl-white;
 
-$c-border         : $cl-grey;
+$c-border           : $cl-grey;
 
-$c-bodyFront      : $cl-blueNavyLight;
-$c-bodyMiddle     : $cl-blueNavy;
-$c-bodyBack       : $cl-blackLight;
+$c-bodyFront        : $cl-blueNavyLight;
+$c-bodyMiddle       : $cl-blueNavy;
+$c-bodyBack         : $cl-blackLight;
 // --- COLORS //
+
 
 // SCREEN SIZES --- //
 // sizes list
-$szl-xs           : 576px;
-$szl-sm           : 768px;
-$szl-lg           : 992px;
-$szl-xl           : 1200px;
+$szl-xs             : 576px;
+$szl-sm             : 768px;
+$szl-lg             : 992px;
+$szl-xl             : 1200px;
 
 // sizes assignment
-$sz-xs            : "min-width: " + $szl-xs;
-$sz-sm            : "min-width: " + $szl-sm;
-$sz-lg            : "min-width: " + $szl-lg;
-$sz-xl            : "min-width: " + $szl-xl;
-$sz-mxs           : "max-width: " + $szl-xs;
-$sz-msm           : "max-width: " + $szl-sm;
-$sz-mlg           : "max-width: " + $szl-lg;
-$sz-mxl           : "max-width: " + $szl-xl;
+$sz-xs              : "min-width: " + $szl-xs;
+$sz-sm              : "min-width: " + $szl-sm;
+$sz-lg              : "min-width: " + $szl-lg;
+$sz-xl              : "min-width: " + $szl-xl;
+$sz-mxs             : "max-width: " + $szl-xs;
+$sz-msm             : "max-width: " + $szl-sm;
+$sz-mlg             : "max-width: " + $szl-lg;
+$sz-mxl             : "max-width: " + $szl-xl;
 // --- SCREEN SIZES //
 
+
+// MISC --- //
+$transSlow          : 0.6s;
+$transMed           : 0.4s;
+$transQuick         : 0.2s;
+// --- MISC //
+
+
+// MIXINS --- //
 @mixin classPrefix($className){
     [class^="#{$className}"],[class*=" #{$className}"]{
       @content;
     }
-  }
+}
+// --- MIXINS //
