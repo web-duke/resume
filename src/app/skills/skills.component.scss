@@ -1,8 +1,72 @@
 @import "variables";
 
+.skills{
+    text-align: center;
+}
+
+.skills__info{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+.skills__info__label{
+    $lineLength: 4em;
+    $lineThick: 2px;
+    $lineColor: $c-border;
+
+    position: absolute; z-index: 5;
+    width: $lineLength;
+    border-bottom: $lineThick solid $lineColor;
+    text-align: left;
+
+    &:after{
+        display: block;
+        position: absolute;
+        width: 1em; height: $lineThick;
+        background-color: $lineColor;
+        content: '';
+    }
+    &:nth-of-type(1){
+        bottom: 8.4em; left: -4em;
+
+        &:after{
+            bottom: -0.4em; right: -0.8em;
+            transform: rotate(45deg);
+        }
+    }
+    &:nth-of-type(2){
+        bottom: 0; left: -4.4em;
+
+        &:after{
+            bottom: 0.2em; right: -0.8em;
+            transform: rotate(-45deg);
+        }
+    }
+    &:nth-of-type(3){
+        bottom: 0; right: -4.4em;
+        text-align: right;
+
+        &:after{
+            bottom: 0.2em; left: -0.8em;
+            transform: rotate(45deg);
+        }
+    }
+    &:nth-of-type(4){
+        bottom: 8.4em; right: -4em;
+        text-align: right;
+
+        &:after{
+            bottom: -0.4em; left: -0.8em;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
 .skills__skills-item-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills__skills-item-wrapper__block{
@@ -10,11 +74,14 @@
     flex-grow: 0;
     flex-shrink: 0;
 
-    @media ($sz-sm) {
+    @media ($sz-xs) {
         flex-basis: calc(100% / 2);
     }
-    @media ($sz-xl) {
+    @media ($sz-sm) {
         flex-basis: calc(100% / 3);
+    }
+    @media ($sz-lg) {
+        flex-basis: calc(100% / 4);
     }
 }
 
