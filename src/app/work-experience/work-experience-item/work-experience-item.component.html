@@ -1,16 +1,14 @@
 <article class="work-experience-item">
-  <div class="work-experience-item__header--wrapper">
-    <header class="work-experience-item__header">
-      <h2 class="work-experience-item__title">{{ title }}</h2>
+  <header class="work-experience-item__header">
+    <h2 class="work-experience-item__title">{{ title }}</h2>
 
-      <a class="work-experience-item__link" href="{{ srcUrl }}" target="_blank">
-        <img class="work-experience-item__img" src="{{ imgPath }}" alt="{{ company }}">
-        <span class="work-experience-item__name">{{ company }}</span>
-      </a>
-    </header>
+    <a class="work-experience-item__link" href="{{ srcUrl }}" target="_blank">
+      <img class="work-experience-item__img" src="{{ imgPath }}" alt="{{ company }}">
+      <span class="work-experience-item__name">{{ company }}</span>
+    </a>
 
     <aside class="work-experience-item__date">{{ dates }}</aside>
-  </div>
+  </header>
 
   <p>
     <ng-content></ng-content>

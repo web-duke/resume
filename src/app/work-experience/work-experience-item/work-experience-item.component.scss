@@ -1,8 +1,10 @@
 @import "variables";
 
-.work-experience-item__header--wrapper{
-    display: flex;
-    justify-content: space-between;
+.work-experience-item{
+    max-width: 50rem;
+    margin: 0 auto; padding: 2rem;
+    background-color: $c-bodyFront;
+    border: 1em solid $c-bodyMiddle;
 }
 
 .work-experience-item__link{
