@@ -26,6 +26,8 @@ $quarterBackColor   : $c-bodyMiddle;
     align-items: center;
     width: $quartersWrapper; height: $quartersWrapper;
     margin: 0 auto;
+    box-shadow: 0 0 14rem $c-bodyBackDark;
+    border-radius: 50%;
 }
 
 .skills-item__achievement__img{
