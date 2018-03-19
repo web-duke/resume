@@ -1,5 +1,13 @@
 @import "variables";
 
+// timeline --- //
+$tl-colorBack : $c-bodyBack;
+$tl-colorFront : $c-bodyFront;
+$tl-thick : 0.4rem;
+$tl-discSize : 2rem;
+$tl-top : 8rem;
+// --- timeline //
+
 .work-experience-wrapper{
     position: relative;
     display: flex;
@@ -10,8 +18,8 @@
         position: absolute;
         top: 1rem; left: 1rem;
         display: block;
-        width: 0.2rem; height: 100%;
-        background-color: $c-border;
+        width: $tl-thick; height: 100%;
+        background-color: $tl-colorBack;
         content: '';
     }
 
@@ -23,6 +31,8 @@
         }
     }
 }
+
+
 
 .work-experience-wrapper__block{
     position: relative;
@@ -37,13 +47,6 @@
         flex-basis: calc(100% / 2);
         padding: 2rem;
     }
-
-    // timeline
-    $tl-colorBack : $c-border;
-    $tl-colorFront : $c-bodyFront;
-    $tl-thick : 0.2rem;
-    $tl-discSize : 2rem;
-    $tl-top : 8rem;
 
     ::ng-deep .work-experience-item{
         &:before, &:after{ 

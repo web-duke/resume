@@ -12,7 +12,9 @@ body{
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: $fontLight;
+    letter-spacing: 0.1rem;
     color: $c-fontPrimary;
 
     &:before{
@@ -49,10 +51,6 @@ section{
     }
 }
 
-h1{
-    text-align: center;
-}
-
 a{
     text-decoration: none;
     color: $c-link;
@@ -60,4 +58,16 @@ a{
     &:hover{
         text-decoration: underline;
     }
+}
+
+h1, h2, h3{
+    font-weight: $fontBold;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    color: $c-fontTitle;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
 }

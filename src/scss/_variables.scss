@@ -3,6 +3,7 @@
 $cl-black           : #000000;
 $cl-blackLight      : #2e2f34;
 $cl-white           : #ffffff;
+$cl-whiteDark       : #ececec;
 $cl-grey            : #5c5d62;
 $cl-greyLight       : #88898e;
 $cl-blueNavy        : #303d4e;
@@ -11,7 +12,9 @@ $cl-blueLight       : #8ea7d6;
 
 // color assignment
 $c-link             : $cl-blueLight;
-$c-fontPrimary      : $cl-white;
+$c-fontTitle        : $cl-white;
+$c-fontPrimary      : $cl-whiteDark;
+$c-fontSecondary    : $cl-blueNavy;
 
 $c-border           : $cl-greyLight;
 
@@ -45,6 +48,9 @@ $sz-mxl             : "max-width: " + $szl-xl;
 $transSlow          : 0.6s;
 $transMed           : 0.4s;
 $transQuick         : 0.2s;
+
+$fontLight          : 300;
+$fontBold           : 700;
 // --- MISC //
 
 

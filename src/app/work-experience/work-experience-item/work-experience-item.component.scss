@@ -6,6 +6,7 @@
     margin: 0 auto;
     background-color: $c-bodyFront;
     box-shadow: 0 0 11rem -1rem $c-bodyBackDark;
+    border: 0.4rem solid $c-bodyBack;
 }
 
 .work-experience-item__header{
@@ -14,21 +15,38 @@
     background-color: $c-bodyFront
 }
 
-.work-experience-item__content{
-    padding: 2rem;
-    background-color: $c-bodyFront
+.work-experience-item__title{
+    margin: 0;
 }
 
 .work-experience-item__link{
     display: flex;
     align-items: center;
+    color: $c-fontPrimary;
 }
 
 .work-experience-item__img{
     display: block;
-    width: 2rem; height: auto;
+    width: 3rem; height: auto;
+    margin-right: 1rem;
 }
 
 .work-experience-item__name{
     display: block;
+}
+
+.work-experience-item__sub-title{
+    margin: 0;
+    color: $c-fontSecondary;
+}
+
+.work-experience-item__date{
+    margin: 0.8rem 0;
+    font-size: 1.2rem;
+}
+
+.work-experience-item__content{
+    margin: 0 2rem 2rem 2rem;
+    padding-top: 2rem;
+    border-top: 0.2rem solid $c-bodyBack;
 }
