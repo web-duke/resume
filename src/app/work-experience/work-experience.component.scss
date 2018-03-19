@@ -1,16 +1,93 @@
 @import "variables";
 
 .work-experience-wrapper{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 3rem;
+
+    &:before{
+        position: absolute;
+        top: 1rem; left: 1rem;
+        display: block;
+        width: 0.2rem; height: 100%;
+        background-color: $c-border;
+        content: '';
+    }
+
+    @media ($sz-sm) {
+        padding-left: 0;
+
+        &:before{
+            left: calc(50% - 0.1rem);
+        }
+    }
 }
 
 .work-experience-wrapper__block{
+    position: relative;
+    box-sizing: border-box;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+    min-height: 25rem;
+    padding: 1.5rem;
 
     @media ($sz-sm) {
         flex-basis: calc(100% / 2);
+        padding: 2rem;
+    }
+
+    // timeline
+    $tl-colorBack : $c-border;
+    $tl-colorFront : $c-bodyFront;
+    $tl-thick : 0.2rem;
+    $tl-discSize : 2rem;
+    $tl-top : 8rem;
+
+    ::ng-deep .work-experience-item{
+        &:before, &:after{ 
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            content: '';
+        }
+        &:before{ 
+            top: $tl-top; left: -1rem;
+            width: 50%; height: $tl-thick;
+            background-color: $tl-colorBack;
+        }
+        &:after{
+            top: $tl-top - ($tl-discSize/2) + ($tl-thick/2);
+            left: -($tl-discSize/2)-1.9rem;
+            width: $tl-discSize; height: $tl-discSize;
+            border-radius: 50%;
+            border: $tl-thick solid $tl-colorBack;
+            background-color: $tl-colorFront;
+        }
+    }
+    @media ($sz-sm) {
+        &:nth-child(odd){
+            ::ng-deep .work-experience-item{
+                &:before{
+                    left: auto; right: 0;
+                }
+                &:after{
+                    left: auto; right: -$tl-discSize/2;
+                }
+            }
+        }
+        &:nth-child(even){
+            top: 12rem;
+
+            ::ng-deep .work-experience-item{
+                &:before{
+                    left: 0;
+                }
+                &:after{
+                    left: -$tl-discSize/2;
+                }
+            }
+        }
     }
 }

@@ -1,10 +1,22 @@
 @import "variables";
 
 .work-experience-item{
-    max-width: 50rem;
-    margin: 0 auto; padding: 2rem;
+    box-sizing: border-box;
+    max-width: 50rem; height: 100%;
+    margin: 0 auto;
     background-color: $c-bodyFront;
-    border: 1em solid $c-bodyMiddle;
+    box-shadow: 0 0 11rem -1rem $c-bodyBackDark;
+}
+
+.work-experience-item__header{
+    position: relative; z-index: 1;
+    padding: 2rem;
+    background-color: $c-bodyFront
+}
+
+.work-experience-item__content{
+    padding: 2rem;
+    background-color: $c-bodyFront
 }
 
 .work-experience-item__link{
