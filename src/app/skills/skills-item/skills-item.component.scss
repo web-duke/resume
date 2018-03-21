@@ -18,8 +18,9 @@ $quarterThick       : 0.8em;
 $quarterColor       : $c-bodyFront;
 $quarterBackColor   : $c-bodyMiddle;
 
-.skills-item__achievement{
+.skills-item__achievement{ background-color: pink;
     font-size: 2rem;
+    max-width: 14rem;
     position: relative;
     display: flex;
     justify-content: center;
