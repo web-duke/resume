@@ -1,10 +1,12 @@
 @import "variables";
 
 .work-experience-item{
+    overflow: hidden;
     box-sizing: border-box;
     max-width: 50rem; height: 100%;
     margin: 0 auto;
     background-color: $c-bodyFront;
+    border-radius: 1.5rem;
     box-shadow: 0 0 11rem -1rem $c-bodyBackDark;
     border: 0.4rem solid $c-bodyBack;
 }
