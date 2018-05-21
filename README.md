@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1 : (fr/en)
 
-- Introtest
+- Intro
 - compétences (cercle pourcentage (skill achievement))
 - techno
 - xp pro (timeline vertical)
